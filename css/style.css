@@ -1,0 +1,58 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: helvetica;
+}
+section#grau{
+    width: 960px;
+    margin-top: 60px;
+}
+section#content, main{
+    width: 960px;
+    margin: auto;
+}
+section#content h1{
+    margin: 0;
+    font-size: 30pt;
+    text-align: center;
+}
+div#content-grau{
+    width: 960px;
+    margin: auto;
+}
+.space{
+    margin-top: 20px;
+}
+.largura{
+    width: 50px;
+}
+section#grau label{
+    font-size: 14pt;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+main{
+    margin-top: 50px;
+}
+table{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    font-size: 18pt;
+}
+
+
+.base{
+    width: 200px;
+}
+.grau{
+    width: 300px;
+    padding-left: 50px;
+}
+/*
+    --Flex Utilizando Flex do Bootstrap--
+    --https://getbootstrap.com/docs/4.0/utilities/flex/--
+*/

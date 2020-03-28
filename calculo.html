@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <section id="content">
+        <section id="grau">
+            <form action="teste.html">
+                <div class="form-group">
+                    <h1>Modelo Ômega</h1>
+                    <div class="d-flex flex-row base">
+                        <label for="base">Base: </label>
+                        <select id="base" class="form-control col-6">
+                            <option value="">--</option>
+                            <option value="1065">1065</option>
+                            <option value="1176">1176</option>
+                            <option value="1284">1284</option>
+                            <option value="1389">1389</option>
+                            <option value="1490">1490</option>
+                            <option value="1588">1588</option>
+                            <option value="1665">1665</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex flex-row" id="content-grau">
+                    <div class="form-group grau">
+                        <h4>Grau Esférico</h4>
+                        <div class="d-flex flex-row space">
+                            <label for="ged">Grau Esf D</label>
+                            <input type="text" name="ged" id="ged" class="form-control col-4" >
+                        </div>
+                        <div class="d-flex flex-row space">
+                            <label for="gef">Grau Esf E</label>
+                            <input type="text" name="gef" id="gef" class="form-control col-4">
+                        </div>
+                    </div>
+                    <div class="form-group grau">
+                        <h4>Grau Cilíndrico</h4>
+                        <div class="d-flex flex-row space">
+                            <label for="gcd">Grau Cil D</label>
+                            <input type="text" name="gcd" id="gcd" class="form-control col-4">
+                        </div>
+                        <div class="d-flex flex-row space">
+                            <label for="gcf">Grau Cil E</label>
+                            <input type="text" name="gcf" id="gcf" class="form-control col-4">
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="Calcular" id="exec" class="btn btn-primary">
+            </form>
+        </section>
+    </section>
+    <main>
+        <table class="table  table-hover table-sm table-secondary table-bordered col-7">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Olho Direito</th>
+                    <th scope="col">Olho Esquerdo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Esférico</th>
+                    <th id="med"></th>
+                    <th id="mee"></th>
+                </tr>
+                <tr>
+                    <th scope="row">Cilindro</th>
+                    <th id="mcd"></th>
+                    <th id="mce"></th>
+                </tr>    
+            </tbody>
+        </table>
+    </main>
+    <script src="js/omega.js"></script>
+    <script src="js/jquery-3.4.1.min.js" ></script>
+    <script src="js/slim.min.js" ></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+</body>
+</html>
